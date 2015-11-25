@@ -17,7 +17,7 @@ class PFManager:
         
     
     def ge_sdk_get(self):
-        response = urllib.request.urlopen("http://api.dev.laohu.com")
+        response = urllib.request.urlopen("http://www.baidu.com")
         return response.read()
     
 
