@@ -5,13 +5,13 @@ print(get_python_lib())
 import datetime
 import mysql.connector as sql
 try:
-    conn=sql.Connect(host='123.196.115.57',port='3306',user='ncuser', passwd='1qaz2wsx',database='laohu_user',charset='utf8')
+    conn=sql.Connect(host='127.0.0.1',port='3306',user='ncuser', passwd='1qaz2wsx',database='laohu_user',charset='utf8')
     cursor=conn.cursor()
     query="select * from mobile_app limit 1"
     a=cursor.execute (query)
     for r in cursor:
         print(r)
-    connector = Connect(user="ncuser", password="1qaz2wsx", database="laohu_user", host="123.196.115.57", port="3306")
+    connector = Connect(user="root", password="123456", database="laohu_user", host="127.0.0.1", port="3306")
 #     result = connector.select(data="app_id,app_key", table="mobile_app", limit="5");
     result = connector.select(table="user", limit="5");
     for res in result:
